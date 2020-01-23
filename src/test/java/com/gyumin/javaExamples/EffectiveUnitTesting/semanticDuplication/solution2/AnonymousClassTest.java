@@ -27,7 +27,7 @@ public class AnonymousClassTest {
 			public boolean test(final Employee employee) {
 				return employee.isSupervisor();
 			}
-		}, 5);
+		}, 2);
 	}
 
 	@Test
@@ -37,7 +37,7 @@ public class AnonymousClassTest {
 			public boolean test(final Employee employee) {
 				return employee.isNewComer();
 			}
-		}, 2);
+		}, 5);
 	}
 
 	private void assertContainCertainNumberOfEmployees(EmployeePredicate predicate, int size) {

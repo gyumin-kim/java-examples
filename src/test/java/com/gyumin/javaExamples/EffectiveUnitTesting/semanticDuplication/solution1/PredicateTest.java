@@ -27,12 +27,12 @@ public class PredicateTest {
 
 	@Test
 	public void groupShouldContainTwoSupervisors() {
-		assertContainCertainNumberOfEmployees(new EmployeeSupervisor(), 5);
+		assertContainCertainNumberOfEmployees(new EmployeeSupervisor(), 2);
 	}
 
 	@Test
 	public void groupShouldContainFiveNewcomers() {
-		assertContainCertainNumberOfEmployees(new EmployeeNewComer(), 2);
+		assertContainCertainNumberOfEmployees(new EmployeeNewComer(), 5);
 	}
 
 	private void assertContainCertainNumberOfEmployees(EmployeePredicate predicate, int size) {

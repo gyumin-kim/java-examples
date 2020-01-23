@@ -22,12 +22,12 @@ public class LambdaTest {
 
 	@Test
 	public void groupShouldContainTwoSupervisors() {
-		assertContainCertainNumberOfEmployees(employee -> employee.isSupervisor(), 5);
+		assertContainCertainNumberOfEmployees(employee -> employee.isSupervisor(), 2);
 	}
 
 	@Test
 	public void groupShouldContainFiveNewcomers() {
-		assertContainCertainNumberOfEmployees(employee -> employee.isNewComer(), 2);
+		assertContainCertainNumberOfEmployees(employee -> employee.isNewComer(), 5);
 	}
 
 	private void assertContainCertainNumberOfEmployees(EmployeePredicate predicate, int size) {
